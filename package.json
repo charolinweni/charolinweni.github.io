@@ -1,0 +1,25 @@
+{
+  "name": "lin-portfolio-parcel",
+  "version": "1.0.0",
+  "source": "src/pages/*.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "browserlist": "0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "@parcel/compressor-brotli": "^2.13.3",
+    "@parcel/compressor-gzip": "~2.13.3",
+    "@parcel/reporter-bundle-buddy": "^2.13.3",
+    "@parcel/transformer-sass": "^2.13.3",
+    "concurrently": "^9.1.2",
+    "parcel": "^2.13.3",
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^2.0.1",
+    "svgo": "^3.3.2"
+  }
+}

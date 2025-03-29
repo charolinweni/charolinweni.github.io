@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include src="src/include/head.html">
+        {
+            "title": "Home"
+        }
+    </include>
+</head>
+<body>
+    <include src="src/include/header.html"></include>
+    <main>
+        <section id="hero-wrapper">
+            <h1 id="welcome" class="display-text-1 text-center">WELCOME TO<br>MY PORTFOLIO</h1>
+            <div id="intro" class="mt-5">
+                <p>
+                    I'm Charolin Weni, an entry-level UI/UX designer.<br>
+                    Despite being new to the field, I excel in crafting product designs.<br>
+                    I possess skills in Interaction Design, Visual Design, and UX Research.
+                </p>
+                <button id="about-me-btn" class="mt-5">ABOUT ME</button>
+            </div>
+            <a href="/#list-of-work" class="scroll-down-btn-wrapper">
+                <div class="scroll-down-circle">
+                </div>
+                <svg width="47" height="65" viewBox="0 0 57 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M56.5283 39.9225L28.5005 74.0433L0.472656 39.9225L3.15332 36.6591L26.5942 65.1958V0H30.4067V65.1958L53.8477 36.6591L56.5283 39.9225Z" fill="black" fill-opacity="0.54"/>
+                </svg>
+            </a>
+        </section>
+        <section id="list-of-work" class="pt-3 mt-5">
+            <h2 class="text-center mb-5">List of Work</h2>
+            <div class="wrapper pure-g">
+                <div class="pure-u-1 pure-u-md-11-24 pure-u-lg-10-24">
+                    <img style="position: relative;top: 20px;" class="list-of-work-1" src="/src/img/list-of-work-1.png" alt="Case Study">
+                    <img class="pure-img ml-3 mb-3" src="/src/img/grab-food.png" alt="Grab Food tag">
+                </div>
+                <div class="pure-u-1 pure-u-md-13-24 pure-u-lg-14-24 pl-3 pr-3 pt-3" style="z-index: 1;position: relative;">
+                    <h3>GRABFOOD</h3>
+                    <p class="mt-3 pb-5">
+                        GrabFood is a feature of the Grab application that functions 
+                        as a platform enabling users to order food and beverages online. <br>
+                        This application employs capabilities to locate the nearest 
+                        restaurants to the user's location and estimate the duration 
+                        required for the food to be prepared and delivered to the 
+                        user's address.
+                    </p>
+                    <img style="position: relative;float: left;left: 290px" class="list-of-work-2 pure-img" src="/src/img/list-of-work-2.png" alt="Case Study">
+                    <button style="position: absolute;bottom: 0;right: 0;border-radius: 50px;padding: 13px 14px;width: auto;margin-right: 20px; margin-bottom: 20px;background-color: var(--color7)">
+                        <span>View case study</span>
+                        <svg width="19" height="17" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.95817 1.49314L15.8357 0.0135486C16.3805 -0.0772462 16.8957 0.290774 16.9865 0.835544L18.4661 9.71309C18.5569 10.2579 18.1889 10.7731 17.6441 10.8639C17.0993 10.9547 16.5841 10.5867 16.4933 10.0419L15.4106 3.54571L1.81385 22.5812L0.18638 21.4187L13.7831 2.38323L7.28697 3.46593C6.7422 3.55672 6.22697 3.1887 6.13617 2.64393C6.04538 2.09916 6.4134 1.58393 6.95817 1.49314Z" fill="black"/>
+                        </svg>       
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <include src="src/include/footer.html"></include>
+</body>
+</html>
