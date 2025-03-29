@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "predeploy": "parcel build index.html --public-url .",
+    "predeploy": "parcel build . --public-url .",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
