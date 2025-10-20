@@ -4,6 +4,7 @@
   "source": "src/pages/*.html",
   "scripts": {
     "start": "parcel",
+    "dev": "parcel serve",
     "build": "parcel build",
     "predeploy": "parcel build . --public-url .",
     "deploy": "gh-pages -d dist"
@@ -17,7 +18,7 @@
     "@parcel/compressor-brotli": "^2.13.3",
     "@parcel/compressor-gzip": "~2.13.3",
     "@parcel/reporter-bundle-buddy": "^2.13.3",
-    "@parcel/transformer-sass": "^2.13.3",
+    "@parcel/transformer-sass": "^2.16.0",
     "concurrently": "^9.1.2",
     "gh-pages": "^6.3.0",
     "parcel": "^2.13.3",

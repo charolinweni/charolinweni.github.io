@@ -33,6 +33,9 @@
     --color5: #493D34;
     --color6: #0A0A0A;
     --color7: #DAC2CF;
+    --color8: #ECFFBD;
+    --color9: #9FB2E8;
+    --color10: #E8F5C8;
 
     --grey: #B8C5D5;
     --dark-grey: #60676F;
@@ -230,6 +233,114 @@ footer {
     }
 }
 
+// Contact Page Styles
+#contact-wrapper {
+    .wrapper {
+        border: none;
+        backdrop-filter: blur(10px);
+    }
+
+    .contact-info {
+        .contact-details {
+            .contact-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 15px;
+
+                .contact-icon {
+                    flex-shrink: 0;
+                    width: 24px;
+                    height: 24px;
+                    color: var(--color6);
+                    margin-top: 2px;
+                }
+
+                .contact-text {
+                    font-size: 0.9em;
+                    line-height: 1.4;
+                }
+            }
+        }
+
+        #view-resume-btn {
+            border: 1px solid var(--color6);
+            background-color: var(--color10);
+            color: var(--color6);
+            font-size: 0.75em;
+            padding: 22px 60px;
+            border-radius: 15px;
+            font-weight: bold;
+            letter-spacing: 0.4em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: var(--color6);
+                color: var(--white);
+            }
+        }
+    }
+
+    .contact-form {
+        .form-group {
+            margin-bottom: 1.5rem;
+
+            input, textarea {
+                width: 100%;
+                padding: 15px 0;
+                border: none;
+                border-bottom: 2px solid var(--color6);
+                background: transparent;
+                font-size: 1em;
+                font-family: "Satoshi", Arial, sans-serif;
+                color: var(--color6);
+                outline: none;
+                transition: border-color 0.3s ease;
+
+                &::placeholder {
+                    color: var(--dark-grey);
+                    font-weight: bold;
+                    opacity: 0.7;
+                }
+
+                &:focus {
+                    border-bottom-color: var(--color9);
+                    border-width: 2px;
+                }
+
+                // &:required:invalid {
+                //     border-bottom-color: var(--color2);
+                // }
+            }
+
+            textarea {
+                resize: vertical;
+                min-height: 120px;
+                font-family: "Satoshi", Arial, sans-serif;
+            }
+        }
+
+        #submit-btn {
+            border: 1px solid var(--color6);
+            background-color: var(--color10);
+            color: var(--color6);
+            letter-spacing: 0.4em;
+            font-size: 0.75em;
+            padding: 22px 60px;
+            border-radius: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+
+            &:hover {
+                background-color: var(--color6);
+                color: var(--white);
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .scroll-down-circle {
         display: none;
@@ -274,6 +385,42 @@ footer {
                 }
             }
 
+        }
+
+        #contact-wrapper {
+            .wrapper {
+                margin: 0;
+                border: none;
+            }
+
+            .contact-info, .contact-form {
+                padding: 1em 0;
+            }
+
+            .contact-info {
+                .contact-details {
+                    .contact-item {
+                        gap: 10px;
+                        
+                        .contact-text {
+                            font-size: 0.85em;
+                        }
+                    }
+                }
+
+                #view-resume-btn {
+                    padding: 18px 40px;
+                    font-size: 0.7em;
+                    width: 100%;
+                }
+            }
+
+            .contact-form {
+                #submit-btn {
+                    padding: 18px 40px;
+                    font-size: 0.7em;
+                }
+            }
         }
     }
 }

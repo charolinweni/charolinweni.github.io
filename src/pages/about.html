@@ -7,20 +7,6 @@
         }
     </include>
     <style>
-        h1.headline {
-            font-family: 'nympha';
-            font-weight: lighter;
-            color: var(--color5);
-            word-spacing: 12px;
-            font-size: 1.7em;
-        }
-        h1.headline::after {
-            content: '';
-            display: block;
-            height: 5px;
-            background-color: var(--color5);
-            width: 56%;
-        }
         
         .me-frame {
             width: 285px;
@@ -56,10 +42,14 @@
     <main>
         <div class="pure-g">
             <div class="pure-u-5-5 pure-u-md-4-5 pr-4">
-                <h1 class="headline mb-5">
-                    I'm Charolin it's nice to meet you
-                </h1>
-                <p class="mb-4">
+                <include src="src/include/special-headline.html">
+                    {
+                        "headline1": "I'm Charolin",
+                        "headline2": "it's nice",
+                        "subheadline": "to meet you"
+                    }
+                </include>
+                <p class="mb-4 mt-5">
                     As an enthusiastic UI/UX designer, I am passionate about creating intuitive and visually appealing user interfaces. 
                 </p>
                 <p class="mb-4">
@@ -72,7 +62,7 @@
                     I am excited about the opportunity to contribute to innovative and user-centered design solutions.
                 </p>
             </div>
-            <div class="pure-u-5-5 pure-u-md-1-5" style="display: flex; justify-content: center;">
+            <div class="pure-u-5-5 pure-u-md-1-5" style="display: flex; justify-content: center;align-items: flex-end;">
                 <div class="me-frame">
                     <img class="pure-img me-img" src="/src/img/bae1.jpeg" alt="Charolin">
                     <span class="mini-glob"></span>
