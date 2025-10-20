@@ -64,13 +64,21 @@
             </div>
             <div class="pure-u-5-5 pure-u-md-1-5" style="display: flex; justify-content: center;align-items: flex-end;">
                 <div class="me-frame">
-                    <img class="pure-img me-img" src="/src/img/bae1.jpeg" alt="Charolin">
+                    <picture>
+                        <source srcset="/src/img/me2.png?as=avif&width=500" type="image/avif" />
+                        <source srcset="/src/img/me2.png?as=webp&width=500" type="image/webp" />
+                        <source srcset="/src/img/me2.png?width=500" type="image/jpeg" />
+                        <img src="/src/img/me2.png?width=500" class="pure-img me-img" alt="test image" />
+                    </picture>
+
+                    <!-- <img class="pure-img me-img" src="/src/img/me2.png" alt="Charolin"> -->
                     <span class="mini-glob"></span>
                 </div>
                 </div>
             </div>
         </div>
     </main>
+    <hr style="height: 5px; background-color: var(--color6);margin: 0 60px;">
     <include src="src/include/footer.html"></include>
 </body>
 </html>
